@@ -12,6 +12,7 @@ html{
     background-image: url(../img/banner.webp);
     height: 550px;
     background-repeat: no-repeat;
+    opacity: .5;
 }
 .cy-banner-desc {
     text-align: center;
@@ -21,6 +22,25 @@ html{
     padding-top: 12%;
     right: 0;
     z-index: 2;
+}
+
+#background-video {
+  width: 100vw;
+  height: 550px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.slider-text1,.slider-text2,.slider-text3,.slider-text4,.slider-text5,.slider-text6,.slider-text7,.slider-text8{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    #background-video { display: none; }
+    .cy-banner-img{opacity: 1;}
 }
 .navbar-light .navbar-nav .nav-link {
     color: rgb(250 239 239 / 55%)!important;

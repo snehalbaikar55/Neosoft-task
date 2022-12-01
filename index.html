@@ -13,7 +13,9 @@
 <body>
 
     <section class="cy-banner-sec">
-        
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+        </video>
         <header class="cf-header">
             <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
                 <div class="container">
@@ -51,71 +53,64 @@
         </div>
 
     </section>
-    <section class="cy-overview-sec p-5">
+    <section class="cy-offer-sec p-5">
         <div class="container">
             <div class="cy-overview-wrapper p-5">
                 <div class="row">
-                    <div class="slider owl-carousel owl-theme">
-                      <div class="item" data-hash="zero"><h4>1</h4></div>
-                      <div class="item" data-hash="one"><h4>2</h4></div>
-                      <div class="item" data-hash="two"><h4>3</h4></div>
-                      <div class="item" data-hash="tree"><h4>4</h4></div>
-                    </div>
+                    <h1 class="slider-data text-center"></h1>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="cy-offer-sec p-5">
+   
         <div class="container">     
-            <h2 class="text-center p-5 position-relative"><span class="cy-line-right position-absolute"></span>Our Offerings<span class="cy-line-left position-absolute"></h2>
+            
             <div class="owl-carousel owl-theme" id="cy-offer">
-                <div class="item">
+                <div class="item" id="item1">
                     <div class="cy-offer-blk">
                         <img src="img/offer-1.png" class="img-fluid" />
-                        <div class="slider-text">slider text 1</div>
+                        <div class="slider-text1">Slider text 1</div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" id="item2">
                     <div class="cy-offer-blk">
                         <img src="img/offer-1.png" class="img-fluid" />
-                        <div class="slider-text">slider text 1</div>
+                        <div class="slider-text2">slider text 2</div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" id="item3">
                     <div class="cy-offer-blk">
                         <img src="img/offer-1.png" class="img-fluid" />
-                        <div class="slider-text">slider text 1</div>
+                        <div class="slider-text3">slider text 3</div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" id="item4">
                     <div class="cy-offer-blk">
                         <img src="img/offer-1.png" class="img-fluid" />
-                       <div class="slider-text">slider text 1</div>
+                       <div class="slider-text4">slider text 4</div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" id="item5">
                     <div class="cy-offer-blk">
                         <img src="img/offer-1.png" class="img-fluid" />
-                        <div class="slider-text">slider text 1</div>
+                        <div class="slider-text5">slider text 5</div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" id="item6">
                     <div class="cy-offer-blk">
                         <img src="img/offer-1.png" class="img-fluid" />
-                        <div class="slider-text">slider text 1</div>
+                        <div class="slider-text6">slider text 6</div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" id="item7">
                     <div class="cy-offer-blk">
                         <img src="img/offer-1.png" class="img-fluid" />
-                        <div class="slider-text">slider text 1</div>
+                        <div class="slider-text7">slider text 7</div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" id="item8">
                    <div class="cy-offer-blk">
                         <img src="img/offer-1.png" class="img-fluid" />
-                        <div class="slider-text">slider text 1</div>
+                        <div class="slider-text8">slider text 8</div>
                     </div>
                 </div>
 
@@ -191,13 +186,66 @@
                     }
                 }
             })
-       
-                $('.item').click(function(){
-                    $text = $(this).clone();
-  $(".slider-data").show().html($('.slider-text').innerHtml);
-                    // $text=$('.slider-text').text();
-                     alert(this.$text);
+                var text1 = $('.slider-text1').text();
+                    
+                    $('.slider-data').text(text1);
+                $('#item1').click(function(){
+                    var text1 = $('.slider-text1').text();
+                    
+                    $('.slider-data').text(text1);
+                    
+
                 })
+                $('#item2').click(function(){
+                    var text1 = $('.slider-text2').text();
+                    
+                    $('.slider-data').text(text1);
+                    
+
+                })
+                $('#item3').click(function(){
+                    var text2 = $('.slider-text3').text();
+                    
+                    $('.slider-data').text(text2);
+                    
+
+                })
+                 $('#item4').click(function(){
+                    var text1 = $('.slider-text4').text();
+                    
+                    $('.slider-data').text(text1);
+                    
+
+                })
+                $('#item5').click(function(){
+                    var text1 = $('.slider-text5').text();
+                    
+                    $('.slider-data').text(text1);
+                    
+
+                })
+                $('#item6').click(function(){
+                    var text1 = $('.slider-text6').text();
+                    
+                    $('.slider-data').text(text1);
+                    
+
+                })
+                $('#item7').click(function(){
+                    var text1 = $('.slider-text7').text();
+                    
+                    $('.slider-data').text(text1);
+                    
+
+                })
+                $('#item8').click(function(){
+                    var text1 = $('.slider-text8').text();
+                    
+                    $('.slider-data').text(text1);
+                    
+
+                })
+               
         })
     </script>
 </body>
